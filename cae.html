@@ -20,7 +20,129 @@
 
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
-
+<!-- Galerry-->
+	<link href="css/lightgallery.css" rel="stylesheet">
+        <style type="text/css">
+          @media (max-width: 600px) {
+				.gallery {
+				width: 100% !important;
+								}
+							}
+            .demo-gallery > ul {
+              margin-bottom: 0;
+            }
+            .demo-gallery > ul > li {
+                float: left;
+                margin-bottom: 5px;
+                margin-right: 0px;
+                width: 180px;
+            }
+            .demo-gallery > ul > li a {
+              display: block;
+              overflow: hidden;
+              position: relative;
+              float: left;
+            }
+            .demo-gallery > ul > li a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery > ul > li a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+              height: 48px;
+              margin-left: -24px;
+              margin-top: -24px;
+              opacity: 0.8;
+              width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+              border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+              padding-bottom: 80px;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!--End Galery-->
 
 </head>
 
@@ -44,7 +166,7 @@
         <!--Collapse content-->
         <div class="collapse navbar-toggleable-xs" id="collapseEx">
             <!--Navbar Brand-->
-            <a class="navbar-brand" href="#">TRANSPEL LOGO</a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width:50%;" class="img-fluid" alt=""></a>
             <!--Links-->
             <ul class="nav navbar-nav">
                 <li class="nav-item active">
@@ -222,83 +344,52 @@
         <h2 class="h1-responsive wow fadeInDown">Técnicas de tratamiento</h2>
      </div>
 
-				<div class="row"><!--First column-->
-			<div id="carousel-tecnicas" class="carousel slide carousel-fade wow fadeIn col-md-6" data-wow-delay="0.3s" data-ride="carousel" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
-                        <!--Indicators-->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-tecnicas" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-tecnicas" data-slide-to="1" class=""></li>
-                            <li data-target="#carousel-tecnicas" data-slide-to="2" class=""></li>
-                            <li data-target="#carousel-tecnicas" data-slide-to="3" class=""></li>
-                            <li data-target="#carousel-tecnicas" data-slide-to="4" class=""></li>
-                            <li data-target="#carousel-tecnicas" data-slide-to="5" class=""></li>
-
-
-							</ol>
-                        <!--/.Indicators-->
-
-                        <!--Slides-->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item">
-                					<img src="img/ilustraciones/tecnicas1.jpg" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                    
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                					<img src="img/ilustraciones/tecnicas2.jpg" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                    
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                					<img src="img/ilustraciones/tecnicas3.jpg" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                					<img src="img/ilustraciones/tecnicas4.jpg" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-                             <div class="carousel-item">
-                					<img src="img/ilustraciones/tecnicas5.jpg" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/ilustraciones/tecnicas6.jpg" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							
-                            
-                        </div>
-                        <!--/.Slides-->
-
-                        <!--Controls-->
-                        <a class="left carousel-control" href="#carousel-tecnicas" role="button" data-slide="prev">
-                            <span class="icon-prev" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-tecnicas" role="button" data-slide="next">
-                            <span class="icon-next" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                        <!--/.Controls-->
-             </div>
-                    <!--/.Carousel Wrapper-->
+				<div class="row">
+				<!--First column-->
+				    <div class="demo-gallery">
+            <ul class="list-unstyled row galleryIni">
+				
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/ilustraciones/tecnicas1.jpg 375, img/slideTipos/mujeres/slide5.jpg 480, img/slideTipos/mujeres/slide5.jpg 800" data-src="img/slideTipos/mujeres/slide5.jpg" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/ilustraciones/tecnicas1.jpg">
+                    </a>
+                </li>
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/ilustraciones/tecnicas2.jpg 375, img/ilustraciones/tecnicas2.jpg 480, img/ilustraciones/tecnicas2.jpg 800" data-src="img/ilustraciones/tecnicas2.jpg" data-sub-html="<h4><h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/ilustraciones/tecnicas2.jpg">
+                    </a>
+                </li>
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/ilustraciones/tecnicas3.jpg 375, img/ilustraciones/tecnicas3.jpg 480, img/ilustraciones/tecnicas3.jpg 800" data-src="img/ilustraciones/tecnicas3.jpg" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/ilustraciones/tecnicas3.jpg">
+                    </a>
+                </li>
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/ilustraciones/tecnicas4.jpg 375, img/ilustraciones/tecnicas4.jpg 480, img/ilustraciones/tecnicas4.jpg 800" data-src="img/ilustraciones/tecnicas4.jpg" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/ilustraciones/tecnicas4.jpg">
+                    </a>
+                </li>
+                <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/ilustraciones/tecnicas5.jpg 375, img/ilustraciones/tecnicas5.jpg 480, img/ilustraciones/tecnicas5.jpg 800" data-src="img/ilustraciones/tecnicas5.jpg" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/ilustraciones/tecnicas5.jpg">
+                    </a>
+                </li>
+                <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/ilustraciones/tecnicas6.jpg 375, img/ilustraciones/tecnicas6.jpg 480, img/ilustraciones/tecnicas6.jpg 800" data-src="img/ilustraciones/tecnicas6.jpg" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/ilustraciones/tecnicas6.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>		
+    
 					<!--/first column-->
 			<!--Second column-->
-		<div class="col-md-6 wow fadeInRight">
+		<div class="col-md-12 wow fadeInRight">
                     
-			<p class="text-justify">
-			Existen dos técnicas para tratar la perdida del cabello, una es la llamada Tira y otra la técnica FUE,  dependiendo del problema de cada paciente es que se recomienda una u otra. 
+			<center><p>
+			<br/>Existen dos técnicas para tratar la perdida del cabello, una es la llamada Tira y otra la técnica FUE,  dependiendo del problema de cada paciente es que se recomienda una u otra. 
 			</p>
+			</center>
          </div>
 		 </div>
 		 <!--/Second column-->
@@ -307,7 +398,7 @@
      </div>
 			<!--first column-->
 			<div class="row">
-            <div class="col-md-6 wow fadeInLeft">
+            <div class="col-md-4 wow fadeInLeft">
 				<center style="padding-top:10px;">
 
                     <p class="text-justify">F.U.E. es un procedimiento quirúrgico que debe realizarse bajo anestésico local y en manos de un cirujano 
@@ -321,120 +412,71 @@
 			</div>
 			<!--/First column-->
 			<!--Second column-->			
-                <div id="carousel-fue" class="carousel slide carousel-fade wow fadeIn col-md-6" data-wow-delay="0.3s" data-ride="carousel" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
-                        <!--Indicators-->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-fue" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-fue" data-slide-to="1" class=""></li>
-                            <li data-target="#carousel-fue" data-slide-to="2" class=""></li>
-                            <li data-target="#carousel-fue" data-slide-to="3" class=""></li>
-                            <li data-target="#carousel-fue" data-slide-to="4" class=""></li>
-                            <li data-target="#carousel-fue" data-slide-to="5" class=""></li>
-                            <li data-target="#carousel-fue" data-slide-to="6" class=""></li>
-                            <li data-target="#carousel-fue" data-slide-to="7" class=""></li>
-                            <li data-target="#carousel-fue" data-slide-to="8" class=""></li>
-							<li data-target="#carousel-fue" data-slide-to="9" class=""></li>
-                            <li data-target="#carousel-fue" data-slide-to="10" class=""></li>
-                            <li data-target="#carousel-fue" data-slide-to="11" class=""></li>
-
-							</ol>
-                        <!--/.Indicators-->
-
-                        <!--Slides-->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item">
-                					<img src="img/fue/1.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                    
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                					<img src="img/fue/2.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                    
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                					<img src="img/slideTipos/pelo/pelo2.jpg" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                					<img src="img/fue/3.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-                             <div class="carousel-item">
-                					<img src="img/fue/4.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/fue/5.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/fue/6.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/fue/7.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/fue/8.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/fue/9.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/fue/10.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/fue/11.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-							</div>	
-							<div class="carousel-item">
-                					<img src="img/fue/12.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <!--/.Slides-->
-
-                        <!--Controls-->
-                        <a class="left carousel-control" href="#carousel-fue" role="button" data-slide="prev">
-                            <span class="icon-prev" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-fue" role="button" data-slide="next">
-                            <span class="icon-next" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                        <!--/.Controls-->
-                    </div>
+        <div class="demo-gallery col-md-8 wow fadeInRight">
+            <ul class="list-unstyled row galleryIni">
+				
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/1.png 375, img/slideTipos/mujeres/slide5.jpg 480, img/slideTipos/mujeres/slide5.jpg 800" data-src="img/slideTipos/mujeres/slide5.jpg" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/1.png">
+                    </a>
+                </li>
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/2.png 375, img/fue/2.png 480, img/fue/2.png 800" data-src="img/fue/2.png" data-sub-html="<h4><h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/2.png">
+                    </a>
+                </li>
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/3.png 375, img/fue/3.png 480, img/fue/3.png 800" data-src="img/fue/3.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/3.png">
+                    </a>
+                </li>
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/4.png 375, img/fue/4.png 480, img/fue/4.png 800" data-src="img/fue/4.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/4.png">
+                    </a>
+                </li>
+                <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/5.png 375, img/fue/5.png 480, img/fue/5.png 800" data-src="img/fue/5.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/5.png">
+                    </a>
+                </li>
+                <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/6.png 375, img/fue/6.png 480, img/fue/6.png 800" data-src="img/fue/6.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/6.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/7.png 375, img/fue/7.png 480, img/fue/7.png 800" data-src="img/fue/7.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/7.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/8.png 375, img/fue/8.png 480, img/fue/8.png 800" data-src="img/fue/8.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/8.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/9.png 375, img/fue/9.png 480, img/fue/9.png 800" data-src="img/fue/9.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/9.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/10.png 375, img/fue/10.png 480, img/fue/10.png 800" data-src="img/fue/10.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/10.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/11.png 375, img/fue/11.png 480, img/fue/11.png 800" data-src="img/fue/11.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/11.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/fue/12.png 375, img/fue/12.png 480, img/fue/12.png 800" data-src="img/fue/12.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/fue/12.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
 			 <!--/Second column-->
 			</div>
 
@@ -443,120 +485,77 @@
      </div>
 				<div class="row" style="padding-bottom:10px;">
 				<!--first column-->	
-				 <div id="carousel-tira" class="carousel slide carousel-fade wow fadeIn col-md-6" data-wow-delay="0.3s" data-ride="carousel" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
-
-                        <!--Indicators-->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-tira" data-slide-to="0" class=""></li>
-                            <li data-target="#carousel-tira" data-slide-to="1" class="active"></li>
-                            <li data-target="#carousel-tira" data-slide-to="2" class=""></li>
-                            <li data-target="#carousel-tira" data-slide-to="3" class=""></li>
-							<li data-target="#carousel-tira" data-slide-to="4" class=""></li>
-                            <li data-target="#carousel-tira" data-slide-to="5" class=""></li>
-                            <li data-target="#carousel-tira" data-slide-to="6" class=""></li>
-                            <li data-target="#carousel-tira" data-slide-to="7" class=""></li>
-                            <li data-target="#carousel-tira" data-slide-to="8" class=""></li>
-                            <li data-target="#carousel-tira" data-slide-to="9" class=""></li>
-                            <li data-target="#carousel-tira" data-slide-to="10" class=""></li>
-                            <li data-target="#carousel-tira" data-slide-to="11" class=""></li>
-
-                        </ol>
-                        <!--/.Indicators-->
-
-                        <!--Slides-->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item">
-                					<img src="img/tira/1.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                    
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                					<img src="img/tira/2.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                    
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                					<img src="img/tira/3.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-                             <div class="carousel-item">
-                					<img src="img/tira/4.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/tira/5.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/tira/6.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/tira/7.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/tira/8.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/tira/9.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/tira/10.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/tira/11.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							<div class="carousel-item">
-                					<img src="img/tira/12.png" class="img-fluid" alt="">
-                                <div class="carousel-caption">
-                                   
-                                </div>
-                            </div>
-							
-                        </div>
-                        <!--/.Slides-->
-
-                        <!--Controls-->
-                        <a class="left carousel-control" href="#carousel-tira" role="button" data-slide="prev">
-                            <span class="icon-prev" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-tira" role="button" data-slide="next">
-                            <span class="icon-next" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                        <!--/.Controls-->
-						
-           </div>
+				 
+				 <div class="demo-gallery col-md-8 wow fadeInLeft">
+            <ul class="list-unstyled row galleryIni">
+				
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/1.png 375, img/slideTipos/mujeres/slide5.jpg 480, img/slideTipos/mujeres/slide5.jpg 800" data-src="img/slideTipos/mujeres/slide5.jpg" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/1.png">
+                    </a>
+                </li>
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/2.png 375, img/tira/2.png 480, img/tira/2.png 800" data-src="img/tira/2.png" data-sub-html="<h4><h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/2.png">
+                    </a>
+                </li>
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/3.png 375, img/tira/3.png 480, img/tira/3.png 800" data-src="img/tira/3.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/3.png">
+                    </a>
+                </li>
+				<li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/4.png 375, img/tira/4.png 480, img/tira/4.png 800" data-src="img/tira/4.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/4.png">
+                    </a>
+                </li>
+                <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/5.png 375, img/tira/5.png 480, img/tira/5.png 800" data-src="img/tira/5.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/5.png">
+                    </a>
+                </li>
+                <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/6.png 375, img/tira/6.png 480, img/tira/6.png 800" data-src="img/tira/6.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/6.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/7.png 375, img/tira/7.png 480, img/tira/7.png 800" data-src="img/tira/7.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/7.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/8.png 375, img/tira/8.png 480, img/tira/8.png 800" data-src="img/tira/8.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/8.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/9.png 375, img/tira/9.png 480, img/tira/9.png 800" data-src="img/tira/9.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/9.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/10.png 375, img/tira/10.png 480, img/tira/10.png 800" data-src="img/tira/10.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/10.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/11.png 375, img/tira/11.png 480, img/tira/11.png 800" data-src="img/tira/11.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/11.png">
+                    </a>
+                </li>
+                  <li class="img-fluid col-xs-6 col-sm-4 col-md-3 gallery" data-responsive="img/tira/12.png 375, img/tira/12.png 480, img/tira/12.png 800" data-src="img/tira/12.png" data-sub-html="<h4></h4>">
+                    <a href="">
+                        <img class="img-responsive" src="img/tira/12.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
 		   	<!--/First column-->	
 
 				<!--Second column-->	
-			<div class="col-md-6 wow fadeInRight" style="padding-top:25px;">
+			<div class="col-md-4 wow fadeInRight" style="padding-top:25px;">
 				<center style="padding-top:10px;">
                     <p class="text-justify">Se retira una banda de cuero cabelludo (de 20 a 25 cm y de 1 a 2.5 cm de ancho) de la zona donante usando un bisturí que 
 					penetra en la dermis cortando nervios y vasos. Posteriormente se sutura y se requiere un periodo de unos 30 días para una cicatrización total
@@ -617,7 +616,22 @@
 <script>
 new WOW().init();
 </script>
-
+<!--GALLERY INI-->
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.galleryIni').lightGallery();
+        });
+        </script>
+        <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+        <script src="dist/js/lightgallery.js"></script>
+        <script src="dist/js/lg-fullscreen.js"></script>
+        <script src="dist/js/lg-thumbnail.js"></script>
+        <script src="dist/js/lg-video.js"></script>
+        <script src="dist/js/lg-autoplay.js"></script>
+        <script src="dist/js/lg-zoom.js"></script>
+        <script src="dist/js/lg-hash.js"></script>
+        <script src="dist/js/lg-pager.js"></script>
+        <script src="lib/jquery.mousewheel.min.js"></script> 
 </body>
 
 </html>
